@@ -17,9 +17,16 @@ public class App {
 
         em.getTransaction().begin();
 
-        Teacher alice = em.find(Teacher.class, 1L);
-        alice.setLastname("Wonderland");
-        em.merge(alice);
+        Course course = em.find(Course.class, 2L);
+        em.remove(course);
+
+//        Teacher alice = em.find(Teacher.class, 1L);
+//        Course databases = new Course(null, "Databases", null);
+       // alice.setLastname("Wonderland");
+        //alice.addCourse(databases);
+
+        //em.persist(databases);
+        //em.merge(alice);
 
 //        em.persist(teacher);
 //        em.persist(java);
