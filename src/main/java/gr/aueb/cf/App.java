@@ -31,6 +31,8 @@ public class App {
 //        em.persist(teacher);
 //        em.persist(java);
 
+
+
         em.getTransaction().commit();
 
         em.close();
